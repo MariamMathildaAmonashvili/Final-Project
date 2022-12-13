@@ -1,0 +1,697 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+main{
+    max-width:2560px;
+    width:100%;
+}
+
+/*  section-1 style */
+.about-me{
+    position:relative;
+}
+.introduction{
+    position:absolute;
+    top:40%;
+    right:10%;
+}
+.slide{
+    display:flex;
+}
+/*#overlay {
+    z-index:100;}
+ეს დავგუგლე და აშკარად არ მუშობს lol */
+
+.about-image{
+    width:100%;
+    height:700px;
+    object-fit: cover;
+    animation: .75s ease-in-out;
+    
+}
+
+.catpictures {
+    width: 200px;
+    height: 200px;
+}
+
+.header-numb {
+    font-size: 80px;
+}
+@keyframes img-appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hide{
+    display:none;
+}
+
+
+  .roca-logo{
+    position:absolute;
+    top:48px;
+    left:52px;
+    
+ } 
+
+
+  .about-logo{
+    position:absolute;
+    top:48px;
+    right:80px;
+ } 
+ .about-logo p {
+    font-family: 'Poppins-ExtraBold';
+    font-weight: 800;
+    font-size: 20px;
+ }
+ .intro{
+    margin-bottom:3rem;
+ }
+
+ .logo{
+    margin-left:20px;
+    margin-right:20px;
+    cursor:pointer; 
+   
+ }
+ .logo:hover{
+    border:solid 1px rgb(234, 147, 162);
+ }
+ .icon-logo{
+  margin-top:3rem;
+ }
+
+ .main-satisfied{
+    max-width:361px;
+    width:100%;
+    height:5px;
+    background-color:#E93656;
+ }
+ .main-satisfied{
+    position:absolute;
+    bottom:5%;
+    right:5%;
+   
+ }
+
+ /*  section-2 */
+
+ .container{
+    margin: 50px auto;
+   
+ }
+
+ .grid-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+ .aboutme{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+
+ }
+.section-image{
+    max-width:430px;
+    width:100%;
+}
+.section-image:hover{
+    border:2px solid rgb(17, 17, 174);
+    cursor:pointer;
+}
+
+.hiring-button{
+    width:150px;
+    height:50px;
+    background:#E93656;
+    color:#FFFFFF;
+    font-size:15px;
+    font-family:'Glacial Indifference';
+    font-weight:bold;
+    border:none;
+    cursor: pointer; 
+    margin-right:70px;
+    transition: background 1s;
+   
+}
+.hiring-button:hover{
+    background:#a3243b;
+    transition: background 1s;
+    
+}
+
+.abilities-bar{
+    width:300px;
+    height:9px;
+    background-color:#F0F0F0;
+    margin-top:15px;
+    margin-bottom:23px;
+   
+   
+}
+.abilities{
+    margin-left:70px;
+    margin-top:50px;
+}
+
+  .ability{
+    width:0%;
+    height:9px;
+    background-color:#E93656;
+    transition: all 1s;
+}  
+
+.outer-socials{
+    width:50px;
+    height:50px;
+    background-color:#FFFFFF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform:scale(1);
+    transition: all 1s; 
+    cursor:pointer;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+
+.socials{
+    display:flex;
+    justify-content:flex-start;
+    margin-top:78px;
+}
+
+
+
+.outer-socials:hover{
+     background-color:#15263E;
+    transform:scale(1);
+    transition: all 1.3s; 
+   
+}
+
+.contacts-area{
+    background-color:#131A36;
+    margin-top:100px;
+    margin-bottom:100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contacts{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.address-logo{
+    margin:60px 29px;
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*  section-3 */
+
+
+
+
+.box{
+    width:285px;
+    height:360px;
+    background-color:#FAFAFA;
+    display:flex;
+    flex-direction: column; 
+    justify-content:center;
+    align-items:center;  
+    opacity: 1;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+}
+
+
+
+.card-box{
+    width:285px;
+    height:360px;
+    background-color:#15263E;   
+    border:solid 1px blue;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:5px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+   
+}
+
+
+.boxes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom:100px;
+}
+.skill-box{
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:10px;
+    position: relative;
+}
+
+.skill-box:hover .box {
+    opacity: 0;
+   
+}
+.skill-box:hover .card-box {
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+/* section-4 */ 
+
+.background{
+    background-image: url('/photos/clip.jpg');
+    display:flex;
+    justify-content:space-around;
+    height:400px;
+
+    margin-bottom:72px;
+}
+.slide-btn-1,.slide-btn-2,.slide-btn-3{
+    width:13px;
+    height:13px;
+    border:solid 2px #FFFFFF;
+    margin:6.5px 0;
+    cursor: pointer;
+}
+  .slide-btn-1:hover,.slide-btn-2:hover,.slide-btn-3:hover, .reg-btn:hover {
+    border:solid 2px #E93656; 
+    
+} 
+.slide-buttons{
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:center;
+    align-items: center; 
+}
+.slider-btn,.review{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAFAFA;
+}
+
+.review-person{
+    border: dashed 2px white;
+    border-radius:50%;
+    padding:15px;
+    max-width:140px;
+    max-height:140px;
+}
+.review-person:hover {
+
+    background-color:#B97679 ;
+}
+.percentage {
+    color: #E93656;
+}
+.review-text {
+    color: #FFFFFF;
+}
+.person-info >img{
+    margin-bottom:45px;
+}
+
+.person-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left:50px;
+}
+.none{
+    display:none;
+}
+
+/* section-5 */
+
+.project-sec{
+    width:80%;
+    margin: 50px auto;
+}
+
+.main-flex{
+    display:flex;
+    justify-content:center;
+}
+.catpictures{
+    max-width:300px;
+    width:100%;
+    height:350px;
+    object-fit: cover;
+   
+}
+.side-bar{
+    background-color:#15263E;
+    padding:50px;
+    max-height: 400px;
+}
+
+.project{
+    position: relative;
+   
+}
+.project:hover .title-background{
+    
+    opacity:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all-projects{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.title-background{
+    max-width:300px;
+    width:100%;
+    height:352px;
+    background-color:#000000;
+    opacity: 80%;
+    position:absolute;
+    bottom:4px;
+     opacity:0;
+}
+.heart-icon{
+    border:solid 2px #E93656;
+    border-radius:50%;
+   padding:19px;
+   margin-bottom:17px;
+}
+
+.display{
+   opacity:0.2;
+}
+
+
+
+
+.article-flex{
+    display:flex;
+    justify-content:flex-end;
+    
+}
+ .article{
+    background-color:#FAFAFA;
+    max-width:800px;
+    padding:40px 40px 40px 24px;
+    max-height:590px;
+   
+} 
+
+.stylied {
+    font-family: 'Poppins-ExtraBold';
+}
+
+.years{
+    background-color:#15263E;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-height:590px;
+}
+.image{
+    max-height:590px;
+    max-width:950px;
+}
+.article-img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+   
+} 
+
+.article-flex-3{
+    display:flex;
+    justify-content:center;
+   
+
+}
+.article-flex-2{
+    width:95%;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.article-2{
+    background-color:#FAFAFA;
+    max-width:800px;
+    padding:40px 5px 40px 80px;
+    max-height:590px;
+} 
+.article-2{
+    background-color:#FAFAFA;
+    max-width:800px;
+    padding:40px 80px 40px 80px;
+    max-height:590px;
+}
+.article-div{
+    margin-bottom:80px;
+}
+
+/* rosa card styles */
+
+
+
+
+.rosa-client{
+    background-color:#FFFFFF;
+    border:solid 4px #E93656;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:32px;
+    position:absolute;
+    width:210px;
+    opacity:0;
+   
+}
+
+
+.rosa {
+    display: flex;
+    justify-content: center;
+    padding: 15px; }
+
+.logo{
+    margin-top:100px;
+    position:relative;
+    display:flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.rosa-logo{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.logo-img{
+    opacity:1;
+}
+
+.logos:hover .logo-img{
+   opacity:0;
+}
+
+.logos:hover .rosa-client{
+   opacity:1;
+}
+
+/* form section */
+
+
+.form-fill{
+    margin-top:75px; 
+    background-image: url('../photos/map.jpg');
+    position:relative;
+    height:660px;
+ 
+}
+
+.modal{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:solid 4px DarkSeaGreen;
+    padding:30px; 
+    background-color:#15263E;
+   
+}
+.block{
+    display:none;
+}
+.modal-border{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .form-layer{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:#000000;
+    opacity:0.71;
+} 
+
+
+
+.user{
+    outline: none;
+    padding:18px 30px;
+    width:100%;
+    background-color:#FAFAFA;
+   
+}
+.inputs-div{
+    max-width:290px;
+    width:100%;
+    margin:46px 5px 5px 5px;
+   
+}
+
+.div-message{
+    max-width:890px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+   
+}
+.inputs-message{
+    padding:22px 30px;
+    width:100%;
+    height:110px;
+    margin-bottom:15px;
+    outline:none;
+}
+.registration{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-p {
+    color: #2ED279;
+}
+.registration-div{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.reg-btn {
+    color: rgb(199, 187, 187);
+    background-color: rgb(24, 26, 28);
+    color: #E93656;
+    width: 150px;
+    height: 40px;
+    border: none;
+} 
+.leave-a-message{
+    max-width:890px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+   
+}
+.form-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+   
+   
+}
+.profession {
+    font-weight: 400;
+    color: #E93656;
+}
+
+.span4-footer {
+    color:  #E93656;
+    font-size:80px;
+}
+.footer-h1 {
+    color: #FAFAFA;
+    font-size: 40px;
+}
+.p-footer{
+    color: #A5A5A5;
+}
+.footer-div{
+    height: 400px;
+    background-color:#282828;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-title{
+    max-width:613px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logos{
+    margin:40px 0;
+}
+.fa{
+    margin:0 5px;
+    color:aqua;
+}
+
+.footer{
+    background-color:#171717;
+    
+}
+
+
+
+
+
+/* ეს აიქონები ცისფრად რატომ ჩაჯდა ვერ გავიგე, არ ეცვლება ფერი, სულ იკარგება და დავტოვე ამ ფრად
